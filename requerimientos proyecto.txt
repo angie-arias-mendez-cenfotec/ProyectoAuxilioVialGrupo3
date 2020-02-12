@@ -1,0 +1,45 @@
+sesion requerimientos 
+reporte de siniestros viales
+permita hacer el reporte de los sinietros en el pais
+
+funciones basicas
+mantenimiento de usuarios
+	4 tipos de usuarios
+		usuario normal, los que pueden registrarse por si mismos
+		encargados de rutas, crean rutas en el sistema
+		administrador general, acceso total
+		usuarios especializados, policias gruas ambulancias etc
+			para todos se necesita la siguiente info
+				primer nombre, segundo nombre(opcional), primer apellido, segundo apellido(opcional), tipo de identificacion(fisica o juridica) si es juridica se pide la razon social el nombre comercial la info del apoderado y el numero de identificacon juridica, si es id fisica hay que ver si es DIMEX o ced naciona o ced residencia o extranjero, dependiendo de esto se valida la cantidad de espacios en el registro, se pide tambien telefono, el correo, la fotografia, el genero
+mantenimiento de rutas
+	indica las rutas que estan habilitadas en el sistema, el unico ademas de crear rutas es el encargado de rutas y el admin general
+		info. el nombre de ruta, punto de inicio y punto de fin seleccionados en un mapa, luego de registrada, se debe pintar en el mapa esa ruta registrada, filtrado(solo nombre y ruta pintada)
+mantenimiento de vehiculos
+	usuario normal(juridico o fisico) puede hacer cambios, el administrador no puede tener vehiculos registrados
+		info. placa, marca, modelo , año, color, tipo de vehiculo, caracteristicas especiales(se deben de seleccionar de una lista ya en la plataforma(debe de haber un mantenimiento de caracteristicas), propietario(se puede indicar cuando registra el vehiculo, siempre debe de tener un propietario) si otra persona quiere registrarlo se debe de enviar una notificacion al propietario que diga que hay otra persona que esta tratando de registrar ese vehiculo y debe de indicar si es posible hacerlo, validar si la placa esta en el sistema, pedir si quiere enviar solicitud de aprobacion)
+aprobacion y asociascion de vehiculos
+reporte de siniestros
+	cualquier usuario menos el admin puede registrar siniestros, siniestro es cualquier cosa que pase en la carretera, para que un usuario pueda reportarlo
+		tiene que seleccionar la ruta en la que esta, luego puede dar una descripcion y se le debe dar una opcion si quiere poner el punto exacto donde esta el siniestro y debe poder mover el marcador de ese punto a donde el este
+			info. tipo de siniestro(listado predefinido, mantenimiento de tipos de siniestros(pueden ser personalizados, se necesita un nombre y un icono del siniestro, este ultimo sale en el mapa)), cuando se registra un siniestro se puede pedir ayuda o asistencia en caso afirmativo se debe pedir tipo de siniestro, seleccionar tipo de ayuda requerida(policia, ambulacia, etc), ubicacion exacta en el mapa, direccion tradicional y se debe pedir la señas exactas de la direccion, al finalizar se debe de notificar a los usuarios especializados y que coincidan en canton y provincia, cuando se envia una notificacion el primer usuario especialziado que la acepta debe de encargarse de la misma, si es aprobada al usuario que reporto le llega la info del usuario especializado, una vez terminada la intervencion puede calificar al usuario especializado estresllas de 1 a 5, unicamente se valora los que han atendido mas de 3 siniestros, un usuario tambien puede hacer una solicitud de ayuda en cualquier momento como pedir ayuda si esta barado, en este caso no se pide tipo de sinisestro)
+mantenimiento de tipos de asistencia
+	el usuario puede escoger si esta previamente registrado en la plataforma unicamente
+		info, nombre del tipo de asistencia, descripcion del tipo de asistencia, costo(si no es gratuita indicar costo, con la moneda)
+mantenimiento de solicitudes de asistencia
+
+
+mantenimiento es registro, listar(filtrar), modificar, eliminar y habilitar o deshabilitar
+
+todo usuario puede ver su perfil
+usuarios especializados pueden ver su calificacion general, este puede ver los perfiles de los usuarios normales
+la plataforma debe de tener inicio de sesion y cerrar sesion, si se cierra la sesion no se puede entrar a ninguna opcion, esta debe de redirigir a la pagina principal, ningun usuario que no este registrado o logeado no puede ver ningun servicio de la app.
+para iniciar sesion se debe de pedir correo electronico, para el password max 8 caracteres y min 6, minuscula, mayuscula, un char especial
+la app debe permitir modificar clave o recuperar clave nueva
+
+el admin debe de ser creado en el sistema antes de los demas
+todo usuario que se registre por si mismo a la hora de llenar la info no se le pide la clave y luego se le envia un codigo de verificacion al correo, este consta de 6 caracteres alfanumericos y la primera vez que entra se le pide ese codigo una vez que haga esto se le pide la creacion de la clave, este proceso se repite cuando se quiera recuperar la clave
+notificaciones deben de ser tanto en app como en correo electronico(estilizadas segun tema de la app)
+a nivel general se debe de visualizar en google chrome. paleta de color menos colores azules, no tiene que ser responsive, todo debe de ser usando web estandar 
+HTML, CSS(se puede usar grid, flexbox), JS, Node JS y Mongo DB
+reporte de siniestro por ruta, cualquier usuario puede solicitar un reporte de siniestros por ruta
+

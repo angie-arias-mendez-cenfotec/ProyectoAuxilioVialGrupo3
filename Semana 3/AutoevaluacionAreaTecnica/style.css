@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#tbl_libros {
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#tbl_libros tr {
+  height: 40px;
+}
+#tbl_libros tr td,
+#tbl_libros tr th {
+  text-align: center;
+}
+#tbl_libros thead tr {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+#tbl_libros tr th {
+  color: #d70060;
+}
+#tbl_libros tbody tr {
+  border-bottom: 2px solid #d0d102;
+}
+#tbl_libros tbody tr:hover {
+  background: #d70060;
+  color: #fff;
+}
+body {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-left: auto;
+  transform: translate(-50%, -50%);
+}
