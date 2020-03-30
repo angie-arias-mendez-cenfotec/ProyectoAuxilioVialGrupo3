@@ -1,6 +1,6 @@
 body, footer{
     font-family: 'Baloo Thambi 2', cursive;
-    color: #78D6AC;
+    color: #F1DED1;
     text-align: center;
     font-size: 15px;
 }
@@ -10,7 +10,7 @@ body, footer{
 }
 
 #intro a {
-    color: #78D6AC;
+    color: #F1DED1;
     text-decoration: none;
     margin-right: 40px;
 }
@@ -37,7 +37,7 @@ body, footer{
 .portada {
     padding: 0 0 4% 0;
     font-family: 'Special Elite', cursive;
-    color: #5AA382;
+    color: #F1DED1;
 }
 .portada h1 {
     padding: 7% 0 2% 0;
@@ -47,12 +47,12 @@ body, footer{
 .integrantes h1 {
     padding: 0 0 1% 0;
     font-size: 50px;
-    color: #704307;
+    color: #F1DED1;
 }
 
 .integrantes {
     padding: 5% 0 4% 0;
-    background-color: #78D6AC;
+    background-color: #f2c083;
     color: #704307;
 }
 
